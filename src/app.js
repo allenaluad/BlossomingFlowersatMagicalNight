@@ -8,11 +8,11 @@ const PORT = 3000;
 app.use(express.static(path.join(__dirname, "public")));
 
 // Route for home page
-app.get("/flowers", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "view", "flowers.html"));
 });
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/flowers`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });
