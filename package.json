@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "sass": "^1.97.3"
+  },
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "scss": "sass --watch src/public/scss:src/public/css"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
